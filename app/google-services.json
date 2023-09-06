@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1094831465546",
+    "project_id": "friendflow-ab9f3",
+    "storage_bucket": "friendflow-ab9f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094831465546:android:dd8d9934dac9def5c032b3",
+        "android_client_info": {
+          "package_name": "com.example.catchy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094831465546-amhrj1eoc7utqojq89052e7s0eqlcjv5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.catchy",
+            "certificate_hash": "5a95a41b27c2817566868e724efc0a50647efb14"
+          }
+        },
+        {
+          "client_id": "1094831465546-u70ubeaii61q1h8e0ja4ks02o4u9b1vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKtev1egRVQVVV_IG-FrTXO3dLXDvwpTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094831465546-u70ubeaii61q1h8e0ja4ks02o4u9b1vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

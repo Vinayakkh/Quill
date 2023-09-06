@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.CreateAccountFragment">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="24sp"
+    android:padding="22dp"
+    android:text="Create\n Account"
+    android:textColor="@color/colorGreen"
+    android:layout_marginTop="78dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"/>
+    <LinearLayout
+        android:id="@+id/LL111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+            <EditText
+                android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_box"
+            android:hint="Name"/>
+            <EditText
+                android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_box"
+            android:hint="Email"/>
+
+            <EditText
+                android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_box"
+            android:hint="Password"/>
+            <EditText
+                android:id="@+id/confirmpassET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_box"
+            android:hint="Confirm Password"/>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/LL111"
+        android:visibility="gone"
+        android:layout_above="@+id/signupBtn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="@drawable/btn_bg"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#fff"
+        android:layout_above="@+id/loginTV"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/signupBtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginTV"
+        android:layout_alignParentBottom="true"
+        android:text="Back to, login"
+        android:textStyle="bold"
+        android:layout_marginBottom="26dp"
+        android:textColor="@color/colorGreen"/>
+
+
+</RelativeLayout>

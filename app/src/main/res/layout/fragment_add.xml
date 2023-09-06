@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:targetApi="m"
+    tools:ignore="UnusedAttribute"
+    tools:context=".fragments.Add">
+
+    <RelativeLayout
+        android:id="@id/layout"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/backBtn"
+            android:padding="4dp"
+            android:background="@drawable/ic_circle"
+            android:elevation="3dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_back"/>
+
+        <ImageButton
+            android:layout_alignParentEnd="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:padding="4dp"
+            android:id="@+id/nextBtn"
+            android:elevation="3dp"
+            android:src="@drawable/ic_next"
+            android:background="@drawable/ic_circle"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/descriptionET"
+    android:background="@android:color/transparent"
+    android:hint="Add Something About This Post"
+    android:minLines="12"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#0000"
+        android:layout_below="@+id/descriptionET"
+        android:id="@+id/view"
+        android:layout_margin="6dp"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/view"
+        android:background="@color/colorAccent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView" />
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

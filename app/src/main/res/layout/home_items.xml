@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_person"
+        app:civ_border_color="#434343"
+        app:civ_border_width="1dp" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/profileImage"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTv"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTv"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="match_parent"
+       android:layout_height="220dp"
+       android:scaleType="centerCrop"
+       android:layout_below="@+id/profileImage"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/imageView">
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/likeBtn"
+            android:checked="false"
+            android:layout_margin="8dp"
+            android:button="@drawable/heart_check"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentBtn"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_comment"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareBtn"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_share"/>
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descTv"
+        android:textStyle="bold"
+        android:layout_below="@id/linearLayout"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likeCountTv"
+        android:textStyle="bold"
+        android:layout_below="@id/descTv"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:text="View all comment"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:visibility="gone"
+    android:layout_below="@+id/likeCountTv"
+    android:id="@+id/commentTV"/>
+
+
+</RelativeLayout>
