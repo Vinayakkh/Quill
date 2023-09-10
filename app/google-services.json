@@ -7,22 +7,22 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1094831465546:android:dd8d9934dac9def5c032b3",
+        "mobilesdk_app_id": "1:1094831465546:android:90dc5dbdfaaa94c4c032b3",
         "android_client_info": {
-          "package_name": "com.example.catchy"
+          "package_name": "com.example.Quill"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1094831465546-amhrj1eoc7utqojq89052e7s0eqlcjv5.apps.googleusercontent.com",
+          "client_id": "1094831465546-vc32i3va14vruk5otdg5jn1ecrcecbp9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.catchy",
+            "package_name": "com.example.Quill",
             "certificate_hash": "5a95a41b27c2817566868e724efc0a50647efb14"
           }
         },
         {
-          "client_id": "1094831465546-u70ubeaii61q1h8e0ja4ks02o4u9b1vb.apps.googleusercontent.com",
+          "client_id": "1094831465546-os1maj64csmp2lkg6ovn21mre7f5kmcc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -35,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1094831465546-u70ubeaii61q1h8e0ja4ks02o4u9b1vb.apps.googleusercontent.com",
+              "client_id": "1094831465546-os1maj64csmp2lkg6ovn21mre7f5kmcc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

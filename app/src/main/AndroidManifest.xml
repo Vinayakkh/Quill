@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.catchy">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
@@ -19,19 +18,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.catchy.chat.ChatActivity"
+            android:name="com.example.Quill.chat.ChatActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.catchy.chat.ChatUsersActivity"
+            android:name="com.example.Quill.chat.ChatUsersActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.catchy.ViewStoryActivity"
+            android:name="com.example.Quill.ViewStoryActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.catchy.StoryAddActivity"
+            android:name="com.example.Quill.StoryAddActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.catchy.PostViewActivity"
+            android:name="com.example.Quill.PostViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -44,9 +43,9 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.catchy.ReplacerActivity" />
+        <activity android:name="com.example.Quill.ReplacerActivity" />
         <activity
-            android:name="com.example.catchy.SplashActivity"
+            android:name="com.example.Quill.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,7 +54,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.catchy.MainActivity"
+            android:name="com.example.Quill.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,8 +6,8 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.catchy"
-        namespace 'com.example.catchy'
+        applicationId "com.example.Quill"
+        namespace 'com.example.Quill'
         minSdk 21
         targetSdk 34
         multiDexEnabled true
@@ -49,8 +49,9 @@ dependencies {
     implementation 'com.karumi:dexter:6.2.3'
 
     implementation 'com.github.MarsadMaqsood:StylishDialogs:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.activity:activity:1.7.2'
 
-//    implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
     implementation 'androidx.media3:media3-exoplayer:1.1.1'
     implementation 'androidx.media3:media3-exoplayer-dash:1.1.1'
     implementation 'androidx.media3:media3-ui:1.1.1'
@@ -63,6 +64,8 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.1.1'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.1'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
